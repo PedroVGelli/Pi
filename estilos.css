@@ -1,0 +1,33 @@
+.infodiv{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+.imgrande{
+    width: 400px; height: 500px;
+    margin-left: 17%;
+    margin-top: 10%;
+}
+.imgsecond{
+    height: 140px; width: 100px;
+    margin: 1%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+.divorg{
+    display: flex;
+    flex-direction: column;
+}
+.secondorg{
+    justify-content: center;
+    display: flex;
+    
+}
+
+#star  {
+    color: #EFB93B ;
+}
+
+#star:hover {
+    
+}
