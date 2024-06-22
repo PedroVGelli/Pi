@@ -1,3 +1,12 @@
+
+:root {
+    --cor-primaria: #545B3C;
+    --cor-secundaria: #9EAC71;
+    --cor-tercearia: #DAC7B9;
+    --cor-branco: #978773;
+    --cor-preto: black;
+}
+
 body {
     font-size: 17px;
     font-family:Arial, Helvetica, sans-serif;
@@ -31,40 +40,41 @@ h1 {
     margin-left: 15%;
     margin-top: 5%;
     border-radius: 15px;
+
 }
 .divorg{
     display: flex;
     flex-direction: column;
 }
+
 .secondorg{
     justify-content: center;
-    display: flex;
-    
+    display: flex;  
 }
 
 #star {
     margin: 2% 0 4% 0;
 }
+
 #descricao {
     padding: 3% 30% 0 8%;
 }
 
 #p-descricao {
-    
     padding-right: 25%;
     margin: 0;
 }
+
 #categ {
-    
     border-radius: 19px;
     display: inline;
     padding: 0.5rem 1.5rem;
-    background-color: #B5C18E;
+    background-color: var(--cor-secundaria);
 }
 
 #detalhes {
     font-size: 14px;
-    color: #B5C18E;
+    color: var(--cor-secundaria);
 }
 
 #disponivel {
@@ -75,15 +85,19 @@ h1 {
     border-radius: 19px;
     display: inline;
     padding: 0.6rem 4rem;
-    background-color: #B5C18E;
+    background-color: var(--cor-secundaria);
 }
 
 #troca:hover {
-    background-color: #545B3C;
-    color: #DAC7B9;
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
     cursor: pointer;
 }
 
+#quero-trocar {
+    text-decoration: none;
+    color: var(--cor-preto);
+}
 #seg-section {
     flex-direction: column;
     display: flex;
@@ -97,13 +111,14 @@ h1 {
 #descricao-sinopse{
     text-align: justify;
 }
+
 .link-livro {
     font-size: 14px;
-    color: #B5C18E;
+    color: var(--cor-secundaria);
 }
 
 .link-livro:hover {
-    color: #545B3C;
+    color: var(--cor-primaria);
     cursor: pointer;
 }
 
