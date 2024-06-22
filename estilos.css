@@ -1,3 +1,21 @@
+body {
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+#titulo {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+#autor {
+    font-size: 14px;
+    margin-top: 0px;
+}
 .infodiv{
     display: grid;
     grid-template-columns: 4fr 8fr;
@@ -8,7 +26,7 @@
     margin-top: 10%;
 }
 .imgsecond{
-    height: 140px; width: 100px;
+    height: 120px; width: 90px;
     margin: 1%;
     margin-left: 15%;
     margin-top: 5%;
@@ -24,10 +42,74 @@
     
 }
 
-#star  {
-    color: #EFB93B ;
+#star {
+    margin: 2% 0 4% 0;
+}
+#descricao {
+    padding: 3% 30% 0 8%;
 }
 
-#star:hover {
+#p-descricao {
     
+    padding-right: 25%;
+    margin: 0;
 }
+#categ {
+    
+    border-radius: 19px;
+    display: inline;
+    padding: 0.5rem 1.5rem;
+    background-color: #B5C18E;
+}
+
+#detalhes {
+    font-size: 14px;
+    color: #B5C18E;
+}
+
+#disponivel {
+    padding: 5% 0 2% 0;
+}
+
+#troca {
+    border-radius: 19px;
+    display: inline;
+    padding: 0.6rem 4rem;
+    background-color: #B5C18E;
+}
+
+#troca:hover {
+    background-color: #545B3C;
+    color: #DAC7B9;
+    cursor: pointer;
+}
+
+#seg-section {
+    flex-direction: column;
+    display: flex;
+    margin: 10% 20%;
+}
+
+.titulo-segsection {
+    margin-bottom: 0;
+}
+
+#descricao-sinopse{
+    text-align: justify;
+}
+.link-livro {
+    font-size: 14px;
+    color: #B5C18E;
+}
+
+.link-livro:hover {
+    color: #545B3C;
+    cursor: pointer;
+}
+
+.detalhes-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 0.01rem;
+}
+
