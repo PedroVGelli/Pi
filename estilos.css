@@ -127,4 +127,34 @@ h1 {
     grid-template-columns: 3fr 2fr;
     gap: 0.01rem;
 }
+header {
+    background-color: #B5C18E;
+    display: flex;
+    align-items: center;
+    text-decoration: none;}
 
+    #btn-buscar {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 11%;
+        cursor: pointer;}
+        
+    #form-buscar {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        #buscar {
+            flex-grow: 0.75;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;}
+
+        .imglogo{
+            width: 100px;
+            height: 100px;
+        }
