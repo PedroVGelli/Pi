@@ -65,7 +65,7 @@ h1 {
     margin: 0;
 }
 
-#categ {
+.categ {
     border-radius: 19px;
     display: inline;
     padding: 0.5rem 1.5rem;
@@ -131,35 +131,279 @@ h1 {
     background-color: #B5C18E;
     display: flex;
     align-items: center;
-    text-decoration: none;}
-.header h1{
+ }
+.header a{
     color: #fff;
     font-size: 50px;
     text-decoration: none;
-
 }
-    #btn-buscar {
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        right: 11%;
-        cursor: pointer;}
-        
-    #form-buscar {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        #buscar {
-            flex-grow: 0.75;
-            padding: 0.5rem;
-            border-radius: 5px;
-            border: none;
-            outline: none;}
+#btn-buscar {
+background-color: transparent;
+border: none;
+position: absolute;
+right: 11%;
+cursor: pointer;}
 
-        .imglogo{
-            width: 100px;
-            height: 100px;
+#form-buscar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#buscar {
+    flex-grow: 0.75;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;}
+
+.imglogo{
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+          
+    .imgrande{
+        width: 200px; height: 400px;
+    }
+    
+    .imgsecond{
+        height: 90px; width: 60px;
+    }
+    #titulo {
+        font-size: 10px;
+    }
+    #descricao {
+        padding: 3% 30% 0 8%;
+    }
+    
+    #p-descricao {
+        padding-right: 25%;
+        margin: 0;
+    }
+    .categ {
+        border-radius: 19px;
+        display: inline;
+        font-size: 14px;
+        padding: 0.1rem 1.5rem;
+        background-color: var(--cor-secundaria);
+    }
+    .org p{
+        margin: 10%;
+    }
+    #titulo {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    
+    #autor {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+   
+    
+    
+    #star {
+        margin: 2% 0 4% 0;
+    }
+    
+    #descricao {
+        padding: 0;
+    }
+    
+    #p-descricao {
+        padding-right: 25%;
+        margin: 0;
+    }
+    
+    .categ {
+        padding: 0.5rem 1.5rem;
+        
+    }
+    
+    #detalhes {
+        font-size: 7px;
+        color: var(--cor-secundaria);
+    }
+    
+    #disponivel {
+        padding: 5% 0 2% 0;
+    }
+    
+    #troca {
+        border-radius: 19px;
+        display: inline;
+        font-size: 17px;
+        padding: 0.1rem 1.5rem;
+        background-color: var(--cor-secundaria);
+    }
+    
+    #troca:hover {
+        background-color: var(--cor-primaria);
+        color: var(--cor-tercearia);
+        cursor: pointer;
+    }
+    
+    #quero-trocar {
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+    #seg-section {
+        flex-direction: column;
+        display: flex;
+        margin: 5% 10%;
+    }
+    
+    .titulo-segsection {
+        margin-bottom: 0;
+    }
+    
+    #descricao-sinopse{
+        text-align: justify;
+    }
+    
+    .link-livro {
+        font-size: 15px;
+        color: var(--cor-secundaria);
+    }
+    
+    .detalhes-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 0.01rem;
+    }
+   
+    
+   
+    
+    
+    
+    }
+    @media only screen and (min-width: 601px) and (max-width: 750px) {
+          
+        .imgrande{
+            width: 500px; height: 550px;
         }
+        
+        .imgsecond{
+            height: 150px; width: 100px;
+            border-radius: 5px;
+            margin: 1%;
+            margin-left: 8%;
+            margin-top: 5%;
+        }
+        #titulo {
+            font-size: 10px;
+        }
+        #descricao {
+            padding: 3% 30% 0 8%;
+        }
+        
+        #p-descricao {
+            padding-right: 25%;
+            margin: 0;
+        }
+        .categ {
+            border-radius: 19px;
+            display: inline;
+            font-size: 14px;
+            padding: 0.1rem 1.5rem;
+            background-color: var(--cor-secundaria);
+        }
+        .org p{
+            margin: 10%;
+        }
+        #titulo {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        
+        #autor {
+            font-size: 12px;
+            margin-top: 0px;
+        }
+       
+        
+        
+        #star {
+            margin: 2% 0 4% 0;
+        }
+        
+        #descricao {
+            padding: 0;
+        }
+        
+        #p-descricao {
+            padding-right: 25%;
+            margin: 0;
+        }
+        
+        .categ {
+            padding: 0.5rem 1.5rem;
+            
+        }
+        
+        #detalhes {
+            font-size: 7px;
+            color: var(--cor-secundaria);
+        }
+        
+        #disponivel {
+            padding: 5% 0 2% 0;
+        }
+        
+        #troca {
+            border-radius: 19px;
+            display: inline;
+            font-size: 17px;
+            padding: 0.1rem 1.5rem;
+            background-color: var(--cor-secundaria);
+        }
+        
+        #troca:hover {
+            background-color: var(--cor-primaria);
+            color: var(--cor-tercearia);
+            cursor: pointer;
+        }
+        
+        #quero-trocar {
+            text-decoration: none;
+            color: var(--cor-preto);
+        }
+        #seg-section {
+            flex-direction: column;
+            display: flex;
+            margin: 5% 10%;
+        }
+        
+        .titulo-segsection {
+            margin-bottom: 0;
+        }
+        
+        #descricao-sinopse{
+            text-align: justify;
+        }
+        
+        .link-livro {
+            font-size: 15px;
+            color: var(--cor-secundaria);
+        }
+        
+        .detalhes-grid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 0.01rem;
+        }
+       .infodiv{
+        display: flex;
+        flex-direction: column;
+       }
+        
+       
+        
+        
+        
+        }
+    
