@@ -127,12 +127,16 @@ h1 {
     grid-template-columns: 3fr 2fr;
     gap: 0.01rem;
 }
-header {
+.header {
     background-color: #B5C18E;
     display: flex;
     align-items: center;
     text-decoration: none;}
+.header h1{
+    color: #fff;
+    font-size: 50px;
 
+}
     #btn-buscar {
         background-color: transparent;
         border: none;
