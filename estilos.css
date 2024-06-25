@@ -1,4 +1,3 @@
-
 :root {
     --cor-primaria: #545B3C;
     --cor-secundaria: #9EAC71;
@@ -7,9 +6,13 @@
     --cor-preto: black;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-size: 17px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -25,31 +28,37 @@ h1 {
     font-size: 14px;
     margin-top: 0px;
 }
-.infodiv{
+
+.infodiv {
     display: grid;
     grid-template-columns: 4fr 8fr;
 }
-.imgrande{
-    width: 400px; height: 500px;
+
+.imgrande {
+    width: 400px;
+    height: 500px;
     margin-left: 17%;
     margin-top: 10%;
 }
-.imgsecond{
-    height: 120px; width: 90px;
+
+.imgsecond {
+    height: 120px;
+    width: 90px;
     margin: 1%;
     margin-left: 15%;
     margin-top: 5%;
     border-radius: 15px;
 
 }
-.divorg{
+
+.divorg {
     display: flex;
     flex-direction: column;
 }
 
-.secondorg{
+.secondorg {
     justify-content: center;
-    display: flex;  
+    display: flex;
 }
 
 #star {
@@ -80,7 +89,9 @@ h1 {
 #disponivel {
     padding: 5% 0 2% 0;
 }
-
+.secondorg div{
+    margin: 5%;
+}
 #troca {
     border-radius: 19px;
     display: inline;
@@ -98,6 +109,7 @@ h1 {
     text-decoration: none;
     color: var(--cor-preto);
 }
+
 #seg-section {
     flex-direction: column;
     display: flex;
@@ -108,7 +120,7 @@ h1 {
     margin-bottom: 0;
 }
 
-#descricao-sinopse{
+#descricao-sinopse {
     text-align: justify;
 }
 
@@ -127,22 +139,26 @@ h1 {
     grid-template-columns: 3fr 2fr;
     gap: 0.01rem;
 }
+
 .header {
     background-color: #B5C18E;
     display: flex;
     align-items: center;
- }
-.header a{
+}
+
+.header a {
     color: #fff;
     font-size: 50px;
     text-decoration: none;
 }
+
 #btn-buscar {
-background-color: transparent;
-border: none;
-position: absolute;
-right: 11%;
-cursor: pointer;}
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 11%;
+    cursor: pointer;
+}
 
 #form-buscar {
     flex-grow: 1;
@@ -151,38 +167,45 @@ cursor: pointer;}
     justify-content: center;
     position: relative;
 }
+
 #buscar {
     flex-grow: 0.75;
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
-    outline: none;}
+    outline: none;
+}
 
-.imglogo{
+.imglogo {
     width: 100px;
     height: 100px;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-          
-    .imgrande{
-        width: 200px; height: 300px;
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .imgrande {
+        width: 200px;
+        height: 300px;
     }
-    
-    .imgsecond{
-        height: 90px; width: 60px;
+
+    .imgsecond {
+        height: 90px;
+        width: 60px;
     }
+
     #titulo {
         font-size: 10px;
     }
+
     #descricao {
         padding: 3% 30% 0 8%;
     }
-    
+
     #p-descricao {
         padding-right: 25%;
         margin: 0;
     }
+
     .categ {
         border-radius: 19px;
         display: inline;
@@ -190,48 +213,50 @@ cursor: pointer;}
         padding: 0.1rem 1.5rem;
         background-color: var(--cor-secundaria);
     }
-    .org p{
+
+    .org p {
         margin: 10%;
     }
+
     #titulo {
         font-size: 18px;
         margin-bottom: 0px;
     }
-    
+
     #autor {
         font-size: 12px;
         margin-top: 0px;
     }
-   
-    
-    
+
+
+
     #star {
         margin: 2% 0 4% 0;
     }
-    
+
     #descricao {
         padding: 0;
     }
-    
+
     #p-descricao {
         padding-right: 25%;
         margin: 0;
     }
-    
+
     .categ {
         padding: 0.5rem 1.5rem;
-        
+
     }
-    
+
     #detalhes {
         font-size: 7px;
         color: var(--cor-secundaria);
     }
-    
+
     #disponivel {
         padding: 5% 0 2% 0;
     }
-    
+
     #troca {
         border-radius: 19px;
         display: inline;
@@ -239,175 +264,196 @@ cursor: pointer;}
         padding: 0.1rem 1.5rem;
         background-color: var(--cor-secundaria);
     }
-    
+
     #troca:hover {
         background-color: var(--cor-primaria);
         color: var(--cor-tercearia);
         cursor: pointer;
     }
-    
+
     #quero-trocar {
         text-decoration: none;
         color: var(--cor-preto);
     }
+
     #seg-section {
         flex-direction: column;
         display: flex;
         margin: 5% 10%;
     }
-    
+
     .titulo-segsection {
         margin-bottom: 0;
     }
-    
-    #descricao-sinopse{
+
+    #descricao-sinopse {
         text-align: justify;
     }
-    
+
     .link-livro {
         font-size: 15px;
         color: var(--cor-secundaria);
     }
-    
+
     .detalhes-grid {
         display: grid;
         grid-template-columns: 3fr 2fr;
         gap: 0.01rem;
     }
-   
-    
-   
-    
-    
-    
-    }
-    @media only screen and (min-width: 601px) and (max-width: 750px) {
-          
-        .imgrande{
-            width: 500px; height: 550px;
 
-        }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+   .adequada img{
+    width: 100%;
+   }
+    .imgrande {
         
-        .imgsecond{
-            height: 150px; width: 100px;
-            border-radius: 5px;
-            margin: 1%;
-            margin-left: 8%;
-            margin-top: 5%;
-        }
-        #titulo {
-            font-size: 10px;
-        }
-        #descricao {
-            padding: 3% 30% 0 8%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        #p-descricao {
-            padding-left: 20%;
-            text-align: center;
-        }
-        .categ {
-            border-radius: 19px;
-            display: inline;
-            font-size: 14px;
-            padding: 0.1rem 1.5rem;
-            background-color: var(--cor-secundaria);
-        }
-        .org p{
-            margin: 10%;
-        }
-        #titulo {
-            font-size: 18px;
-            margin-bottom: 0px;
-        }
-        
-        #autor {
-            font-size: 12px;
-            margin-top: 0px;
-        }
-       
-        
-        
-        #star {
-            margin: 2% 0 4% 0;
-        }
-        
-        #descricao {
-            padding: 0;
-        }
-        
-        #p-descricao {
-            padding-right: 25%;
-            margin: 0;
-        }
-        
-        .categ {
-            padding: 0.5rem 1.5rem;
-            
-        }
-        
-        #detalhes {
-            font-size: 7px;
-            color: var(--cor-secundaria);
-        }
-        
-        #disponivel {
-            padding: 5% 0 2% 0;
-        }
-        
-        #troca {
-            border-radius: 19px;
-            display: inline;
-            font-size: 17px;
-            padding: 0.1rem 1.5rem;
-            background-color: var(--cor-secundaria);
-        }
-        
-        #troca:hover {
-            background-color: var(--cor-primaria);
-            color: var(--cor-tercearia);
-            cursor: pointer;
-        }
-        
-        #quero-trocar {
-            text-decoration: none;
-            color: var(--cor-preto);
-        }
-        #seg-section {
-            flex-direction: column;
-            display: flex;
-            margin: 5% 10%;
-        }
-        
-        .titulo-segsection {
-            margin-bottom: 0;
-        }
-        
-        #descricao-sinopse{
-            text-align: justify;
-        }
-        
-        .link-livro {
-            font-size: 15px;
-            color: var(--cor-secundaria);
-        }
-        
-        .detalhes-grid {
-            display: grid;
-            grid-template-columns: 3fr 2fr;
-            gap: 0.01rem;
-        }
-       .infodiv{
+        margin: 1rem;
+
+    }
+
+    .imgsecond {
+        height: 150px;
+        width: 100px;
+        border-radius: 5px;
+        margin: 1%;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+
+    #titulo {
+        font-size: 10px;
+    }
+
+    #descricao {
+        padding: 3% 30% 0 8%;
         display: flex;
         flex-direction: column;
-       }
-        
-       
-        
-        
-        
-        }
-    
+        align-items: center;
+    }
+
+    #p-descricao {
+        padding-left: 20%;
+        text-align: center;
+    }
+
+    .categ {
+        display: inline;
+        background-color: var(--cor-secundaria);
+        padding: .5rem .5rem;
+    }
+
+    .org p {
+        margin: 10%;
+    }
+
+    #titulo {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    #autor {
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+
+
+    #star {
+        margin: 2% 0 4% 0;
+    }
+
+    #descricao {
+        padding: 0;
+    }
+
+    #p-descricao {
+        padding-right: 25%;
+        margin: 0;
+    }
+
+  
+
+    #detalhes {
+        font-size: 7px;
+        color: var(--cor-secundaria);
+    }
+
+    #disponivel {
+        padding: 5% 0 2% 0;
+    }
+
+    #troca {
+        border-radius: 19px;
+        display: inline;
+        font-size: 17px;
+        padding: 0.1rem 1.5rem;
+        background-color: var(--cor-secundaria);
+    }
+
+    #troca:hover {
+        background-color: var(--cor-primaria);
+        color: var(--cor-tercearia);
+        cursor: pointer;
+    }
+
+    #quero-trocar {
+        text-decoration: none;
+        color: var(--cor-preto);
+    }
+
+    #seg-section {
+        flex-direction: column;
+        display: flex;
+        margin: 5% 10%;
+    }
+
+    .titulo-segsection {
+        margin-bottom: 0;
+    }
+
+    #descricao-sinopse {
+        text-align: justify;
+    }
+
+    .link-livro {
+        font-size: 15px;
+        color: var(--cor-secundaria);
+    }
+
+    .detalhes-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 0.01rem;
+    }
+
+    .infodiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        background-color: #B5C18E;
+        display: flex;
+        align-items: center;
+    }
+
+    #form-buscar {
+        display: none;
+    }
+
+    .header a {
+        color: #fff;
+        font-size: 25px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 901px) and  (max-width: 1200px){}
