@@ -166,7 +166,7 @@ cursor: pointer;}
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
           
     .imgrande{
-        width: 200px; height: 400px;
+        width: 200px; height: 300px;
     }
     
     .imgsecond{
@@ -285,6 +285,7 @@ cursor: pointer;}
           
         .imgrande{
             width: 500px; height: 550px;
+
         }
         
         .imgsecond{
@@ -299,11 +300,14 @@ cursor: pointer;}
         }
         #descricao {
             padding: 3% 30% 0 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         #p-descricao {
-            padding-right: 25%;
-            margin: 0;
+            padding-left: 20%;
+            text-align: center;
         }
         .categ {
             border-radius: 19px;
