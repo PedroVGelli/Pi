@@ -414,9 +414,9 @@ h1 {
         margin: 0;
     }
 
-  
-
+    
     #detalhes {
+        
         font-size: 7px;
         color: var(--cor-secundaria);
     }
@@ -429,7 +429,7 @@ h1 {
         border-radius: 19px;
         display: inline;
         font-size: 17px;
-        padding: 0.1rem 1.5rem;
+        padding: 0.4rem 1.5rem;
         background-color: var(--cor-secundaria);
     }
 

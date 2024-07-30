@@ -1,7 +1,7 @@
 <?php require 'header.php'?>
     <section>
         <div class="infodiv">
-            <div class="divorg">
+            <div class="divorg">    
                 <div class="adequada">
                 <div class="img-zoom-container">
                 <img id="myimage" src="img/Exemplo.jpg">
@@ -19,8 +19,8 @@
             </div>
 
             <div id="descricao">
-                <h1 id="titulo">Geometria Analítica um tratamento vetorial </h1>
-                <p id="autor">Ivan de Camargo & Paulo Boulos</p>
+                <h1 id="titulo" aria-label="Titulo do Livro">Geometria Analítica um tratamento vetorial </h1>
+                <p id="autor" aria-label="nome dos autores">Ivan de Camargo & Paulo Boulos</p>
                 <h2 id="star">
                     <img src="img/estrela-vazia.png" alt="estrela 1" class="star">
                     <img src="img/estrela-vazia.png" alt="estrela 2" class="star">
@@ -39,17 +39,17 @@
                 <h1>Descrição</h1>
                 <p id="p-descricao">Bom estado, leve desgaste da capa, páginas bem amareladas com pontos de oxidação nas
                     laterais. Conteúdo sem grifos ou rasuras. <br>
-                    <a href="#titulo-segsection" class="link-livro">Mais detalhes</a>
+                    <a href="#titulo-segsection" class="link-livro" aria-label="Link para mais detalhes sobre o livro">Mais detalhes</a>
                 </p>
                 <p id="disponivel">3 Livros disponíveis para a troca</p>
-                <a href="" id="quero-trocar">
+                <a href="" id="quero-trocar" aria-label="link para fazer a troca do livro">   
                     <p id="troca"><strong><i>Quero Trocar</i></strong></p>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="titulo-segsection" class="titulo-segsection" aria-label="titulo-segsection">
+    <section id="titulo-segsection" class="titulo-segsection" >
         <div id="seg-section">
             <h1 class="titulo-segsection">Sinopse:</h1>
             <p id="descricao-sinopse">Nova edição de Geometria Analítica - Um Tratamento Vetorial confirma sua posição
@@ -60,7 +60,7 @@
                 linguagem clara e objetiva, este livro traz respostas para os exercícios e estratégias de solução, o que
                 o torna um guia essencial para o estudo da Geometria. <a
                     href="https://books.google.com/books/about/Geometria_Anal%C3%ADtica.html?id=lmnqAAAACAAJ&source=kp_book_description"
-                    target="_blank" class="link-livro">Google Books</a></p> <br>
+                    target="_blank" class="link-livro" aria-label="link para mais informações sobre o livro no google books">Google Books</a></p> <br>
             <h1 class="titulo-segsection">Detalhes do Produto</h1>
             <div class="detalhes-grid">
                 <p><strong>ISBN 10:</strong> 8587918915</p>
