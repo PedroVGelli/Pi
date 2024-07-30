@@ -1,31 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-</head>
-
-<body>
-    <header class="header">
-        <img src="img/book.png.png" alt="" class="imglogo">
-        <h1><a href="detalhes.html">GettingBooks</a></h1>
-        <form action="" id="form-buscar">
-            <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
-            <button type="submit" id="btn-buscar"> <img src="img/pesquisa2.png" alt="" width="35px"></button>
-        </form>
-    </header>
+<?php require 'header.php'?>
     <section>
         <div class="infodiv">
             <div class="divorg">
                 <div class="adequada">
-                <img src="img/Exemplo.jpg" alt="" class="imgrande">
+                <div class="img-zoom-container">
+                <img id="myimage" src="img/Exemplo.jpg">
+                 <div id="myresult" class="img-zoom-result"></div>
                 </div>
+    
                 <div class="secondorg">
                     <div>
                     <img src="img/Exemplo.jpg" alt="" class="imgsecond">
@@ -40,12 +22,15 @@
                 <h1 id="titulo">Geometria Analítica um tratamento vetorial </h1>
                 <p id="autor">Ivan de Camargo & Paulo Boulos</p>
                 <h2 id="star">
-                    <img src="img/estrla-preenchida.png" alt="">
-                    <img src="img/estrla-preenchida.png" alt="">
-                    <img src="img/estrla-preenchida.png" alt="">
-                    <img src="img/estrla-preenchida.png" alt="">
-                    <img src="img/estrela-vazia.png" alt="">
+                    <img src="img/estrela-vazia.png" alt="estrela 1" class="star">
+                    <img src="img/estrela-vazia.png" alt="estrela 2" class="star">
+                    <img src="img/estrela-vazia.png" alt="estrela 3" class="star">
+                    <img src="img/estrela-vazia.png" alt="estrela 4" class="star">
+                    <img src="img/estrela-vazia.png" alt="estrela 5" class="star">
                 </h2>
+
+
+
                 <div>
                 <p class="categ"> <strong><i>Científico</i></strong></p>
                 <p class="categ"> <strong><i>Acadêmico</i></strong></p>

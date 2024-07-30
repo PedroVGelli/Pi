@@ -29,16 +29,18 @@ h1 {
     margin-top: 0px;
 }
 
-.infodiv {
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-}
+
 
 .imgrande {
-    width: 400px;
-    height: 500px;
-    margin-left: 17%;
+    width: 300px;
+    height: 400px;
+    margin-left: 30%;
     margin-top: 10%;
+}
+#myimage {
+    margin-top: 15%;
+
+    margin-left: 30%;
 }
 
 .imgsecond {
@@ -53,10 +55,10 @@ h1 {
 
 .divorg {
     display: flex;
-    flex-direction: column;
 }
 
 .secondorg {
+    margin-left: 50%;
     justify-content: center;
     display: flex;
 }
@@ -65,6 +67,18 @@ h1 {
     margin: 2% 0 4% 0;
 }
 
+/* CSS para as estrelas */
+#star {
+    display: flex;
+    gap: 5px; /* Espaçamento entre as estrelas */
+  }
+  
+  #star img {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+  }
+  
 #descricao {
     padding: 3% 30% 0 8%;
 }
@@ -119,7 +133,28 @@ h1 {
 .titulo-segsection {
     margin-bottom: 0;
 }
-
+.img-zoom-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* CSS para a imagem */
+  .img-zoom-container img {
+    width: 350px;
+    height: 450px;
+  }
+  
+  /* CSS para a área de zoom */
+  .img-zoom-result {
+    position: absolute;
+    border: 1px solid #000;
+    top: 0;
+    left: 100%;
+    width: 200px; /* Tamanho do zoom */
+    height: 200px; /* Tamanho do zoom */
+    background-repeat: no-repeat;
+    background-size: 300px 240px; /* Ajuste de acordo com o tamanho da imagem original */
+  }
 #descricao-sinopse {
     text-align: justify;
 }
